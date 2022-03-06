@@ -2,15 +2,15 @@ import React from 'react';
 import './Lessons';
 import Lessons from './Lessons';
 
-const Lesson1 = () => {
+const Lesson2 = () => {
     return (
         <div className="MainContent">
             <div>
-                <h1>{Lessons.Lesson1.title}</h1>
+                <h1>{Lessons.Lesson2.title}</h1>
                 <h2>Краткий конспект</h2>
-                <p>{Lessons.Lesson1.text}</p>
+                <p>{Lessons.Lesson2.text}</p>
 
-                    <p className="LessonLink">ссылка на видеозапись : {Lessons.Lesson1.link}</p>
+                    <p className="LessonLink">ссылка на видеозапись : {Lessons.Lesson2.link}</p>
             </div>
 
             <div>
@@ -18,7 +18,7 @@ const Lesson1 = () => {
                     Домашнее Задание
                 </h2>
                 <p>
-                    {Lessons.Lesson1.homework}
+                    {Lessons.Lesson2.homework}
                 </p>
             </div>
 
@@ -34,4 +34,4 @@ const Lesson1 = () => {
     )
 }
 
-export default Lesson1
+export default Lesson2

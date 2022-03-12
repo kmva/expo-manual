@@ -1,33 +1,33 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './Sidebar';
-import Lessons from './Lessons';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Lesson1 from './Lesson1';
-import Lesson2 from './Lesson2';
+import { Home } from './Pages/Home/Home';
+import { LessonPage } from './Pages/Lessons/LessonPage';
+import { useParams } from 'react-router-dom';
+
+function Lesson () {
+  let { id } = useParams();
+  
+}
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Sidebar />
+       
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/lesson1" component={Lesson1} />
-          <Route path="/lesson2" component={Lesson2} />
+
+          <Route path='/' exact element={<Home />}/>
+          <Route path='/lessons' element={<Home />}/>
+          <Route path='/lessons/:id' element={<LessonPage />}/>
+
         </Routes>
       </div>
     </Router>
   );
 }
 
-const Home = () => {
-    return (
-      <div>
-        <h1>Home page</h1>
-      </div>
-    )
-}
+
   
 export default App;
 

@@ -1,0 +1,13 @@
+.home-page {
+  display: flex;
+}
+
+h1,
+p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  width: 75%;
+}

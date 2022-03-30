@@ -3,21 +3,19 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './Pages/Home/Home';
 import { LessonPage } from './Pages/Lessons/LessonPage';
-import { useParams } from 'react-router-dom';
+import { Login } from './Authentication/Login';
 
-function Lesson () {
-  let { id } = useParams();
-  
-}
+
 
 function App() {
   return (
     <Router>
       <div className="App">
        
-        <Routes>
+       
+       <Routes>
 
-          <Route path='/' exact element={<Home />}/>
+          <Route path='/' exact element={<Login />} />
           <Route path='/lessons' element={<Home />}/>
           <Route path='/lessons/:id' element={<LessonPage />}/>
 

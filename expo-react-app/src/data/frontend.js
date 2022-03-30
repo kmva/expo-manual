@@ -5,6 +5,7 @@ const frontend = {
             lesson : 'Курс по front-end разработке',
             teacher : 'Преподаватель : Каимова Фариза'
         },
+        
 
     lessons : [
         {

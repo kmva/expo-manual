@@ -11,8 +11,6 @@ import frontend from '../../data/frontend';
  
  export const Sidebar = () => {
      
-      //const [lessons, setLessons] = useState(lessons);
-
       
      return (
         <div className="sidebar">

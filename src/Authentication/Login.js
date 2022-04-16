@@ -1,36 +1,39 @@
-import React from 'react';
+import {React, useState} from 'react';
 import tokens from "../data/tokens";
-import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import links from '../data/links';
 
 
+export const Login = () => {
 
+        
 
-    export const Login = () => {
+        const navigate = useNavigate();
+
         const [token, setToken] = useState('');
 
 
-        const handleSubmit = e => {e.preventDefault()
-        console.log(token);
+        const handleSubmit = () => {
             tokens.forEach(el => {
                 
                 if(el.token == token){
-                    const group = el.groupId;
-                    console.log('Logged in successfully');
-                    console.log(el.groupId);
 
+                    const group = el.groupId;
+                    localStorage.setItem('isAuth', 'true');
+                    navigate(`/${group}/lessons`);
                 }
                 
             })
-
-                
-            }
-
+   
+            };
+        
+        
 
         return (
         
             <div>
             
-                <h1>Sign In</h1>
+                <h1>Connexion</h1>
                 <form>
                     <label htmlFor="token"> Your token here : </label>
                     <input 

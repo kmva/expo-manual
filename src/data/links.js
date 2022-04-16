@@ -1,6 +1,8 @@
 const links = {
-    1 : {
-
+    groups : [
+    
+    {
+        gr : 1,
         lesson1: "https://lesson1-group1",
         lesson2: "https://lesson2-group1",
         lesson3: "https://lesson3-group1",
@@ -9,8 +11,8 @@ const links = {
 
     },
 
-    2 : {
-
+    {
+        gr : 2,
         lesson1: "https://lesson1-group2",
         lesson2: "https://lesson2-group2",
         lesson3: "https://lesson3-group2",
@@ -19,8 +21,8 @@ const links = {
 
     },
 
-    3 : {
-
+    {
+        gr : 3,
         lesson1: "https://lesson1-group3",
         lesson2: "https://lesson2-group3",
         lesson3: "https://lesson3-group3",
@@ -29,8 +31,8 @@ const links = {
 
     },
 
-    4 : {
-
+    {
+        gr : 4,
         lesson1: "https://lesson1-group4",
         lesson2: "https://lesson2-group4",
         lesson3: "https://lesson3-group4",
@@ -38,5 +40,5 @@ const links = {
         lesson5: "https://lesson5-group4",
 
     }
-
+        ]
 };

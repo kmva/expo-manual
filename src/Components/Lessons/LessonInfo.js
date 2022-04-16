@@ -1,14 +1,20 @@
 import React from 'react';
 import frontend from '../../data/frontend';
+import links from '../../data/links';
 import { useParams } from 'react-router-dom';
 
 
-   
+
 
 export const LessonInfo = () => {
 
+    
+
 let { id } = useParams();
+
 const lesson = frontend.lessons.find(lesson => lesson.id ==  id) 
+
+
     
     return (
         <div className="lesson-content">

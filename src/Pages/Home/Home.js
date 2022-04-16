@@ -1,10 +1,15 @@
 import './Home.css';
 import { Sidebar } from '../../Components/Shared/Sidebar';
 
+
 export const Home = () => {
+
+   
+
     return (
         <div className="home-page">
             <Sidebar />
+
             <div className="home-content">
                     <h1>Welcome to the home page !</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
